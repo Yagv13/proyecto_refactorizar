@@ -462,6 +462,8 @@ Justifica el orden elegido.
 
 Describe qué riesgos podrían presentarse durante una refactorización de este tipo.
 
+Alguna funcionalidad del sistema puede dejar de funcionar después de mover archivos, puede haber errores en las rutas de los includes, imagenes, archivos css al reogranizar las carpetas, al momento de detectar códigos duplicados se puede eliminar un código que aún se está usando, puede haber errores en el funcionamiento de JavaScript al cambiar la estructura del proyecto, va a haber mayor tiempo de desarrollo si salen errores que no estaban previstos, se puede perder la información si no se realiza un respaldo.
+
 Por ejemplo:
 
 * Romper funcionalidades existentes.
@@ -477,10 +479,15 @@ Por ejemplo:
 Finaliza el documento respondiendo:
 
 * ¿Consideras necesaria la refactorización?
+si, aunque fuinciona correctamente el sistema si siento que es necesaria una refactorización porque así va a hacer más facil de ubicar cada archivo o código cuando sea necesario un cambio o un mantenimiento.
 * ¿Qué beneficios tendría?
+mejor organización, separación de responsabilidades, menos código duplicado, mayor facilidad para encontrar archivos y hacer cambios.
 * ¿Qué parte consideras más compleja?
+mover todo a controller, models y views sin afectar el funcionamiento actual ya que muchos archivos dependen de otros y hacer cambios puede hacer que salgan errores. 
 * ¿Qué fue lo que más te llamó la atención del proyecto?
+lo completo que está 
 * ¿Qué harías primero si fueras responsable de este sistema?
+organizaría la estructura del proyecto y luego ya empezaría con la refactorización
 
 ---
 
